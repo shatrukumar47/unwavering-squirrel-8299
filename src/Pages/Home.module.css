@@ -1,0 +1,132 @@
+.container{
+      background-color: white;
+}
+.banner1{
+    background: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner1> img{
+    width: 50%;
+}
+.textContainer{
+    margin-bottom: 20px;
+}
+.textContainer > h1{
+    color: #070e39;
+    background: white;
+    font-size: 40px;
+    font-weight: 500;
+}
+.textContainer > p{
+    color: #070e39;
+    background: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+.gettingStarted{
+    background: white;
+}
+.gettingStarted > h2{
+    color: #070e39;
+    background: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.banner2{
+    width: 100%;
+    background: #000;
+}
+.banner2 > .banner2_child1{
+    background: #000;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner2 > .banner2_child1 > h1{
+    color: white;
+    background: black;
+    font-size: 30px;
+    font-weight: 500;
+}
+.banner2 > .banner2_child2{
+    background: #000;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner2 > .banner2_child2 > img{
+    background: #000;
+    border-radius: 100px;
+    width: 400px;
+    margin-right: 40px;
+}
+.banner2 > .banner2_child2 > h1{
+    color: white;
+    background: black;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.banner3{
+    width: 100%;
+    background: white;
+}
+.banner3 > .banner3_child1{
+    margin-top: 100px;
+    background: white;
+}
+.banner3 > .banner3_child1 > h1{
+    color: #070e39;
+    background: white;
+    font-size: 35px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.banner3 > .banner3_child1 > p{
+    color: #070e39;
+    background: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.banner3 > .banner3_child2{
+    background: white;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 15px;
+    margin-top: 50px;
+    padding: 20px 20px 60px 20px;
+}
+
+.banner3 > .banner3_child2 > .banner3_child2_box1{
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.banner3_child2_box1:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    top: -4px;
+    border: 1px solid #cccccc;
+    background-color: white;
+}
+.banner3 > .banner3_child2 > .banner3_child2_box1 > h3{
+    background: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+.banner3 > .banner3_child2 > .banner3_child2_box1 > p{
+    background: white;
+    font-size: 16px;
+}
