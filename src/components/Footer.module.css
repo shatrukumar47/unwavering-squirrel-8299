@@ -1,0 +1,85 @@
+.container{
+    width: 100%;
+    background: #B7B7B7 ;
+    padding: 20px;
+}
+.container > .box{
+    background: #B7B7B7 ;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    padding: 10px;
+}
+.container > .box > .left_box{
+    background: #B7B7B7;
+    padding: 10px;
+}
+.container > .box > .left_box > .logo{
+    background: #B7B7B7;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.container > .box > .left_box > .logo > img{
+    background: #B7B7B7;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.container > .box > .left_box > .logo > .logoContainer{
+    display: flex;
+    margin-left: 10px;
+}
+.container > .box > .left_box > div:last-child{
+    display: flex;
+    gap: 10px;
+    background: #B7B7B7;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+.container > .box > .left_box > div:last-child > h1{
+    background: #B7B7B7;
+    color: black;
+    font-weight: bolder;
+}
+.container > .box > .left_box > div:last-child > img{
+    width: 25px;
+    height: 25px;
+    background: #B7B7B7;
+    border-radius: 50%;
+}
+.container > .box > .left_box img:hover{
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    cursor: pointer;
+}
+
+
+.container > .box > .right_box{
+    background: #B7B7B7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 10px;
+}
+.container > .box > .right_box > div{
+    display: flex;
+    gap: 30px;
+    background: #B7B7B7;
+}
+.container > .box > .right_box > div:last-child > div{
+    background: #B7B7B7;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+}
+.container > .box > .right_box > div:last-child > div h4{
+    background: #B7B7B7;
+    font-weight: bolder;
+    margin-top: 5px;
+}
