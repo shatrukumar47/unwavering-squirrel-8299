@@ -1,5 +1,30 @@
+.step1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.button_form1{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
 .step2{
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.button_form2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.step3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.button_form3{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
 }

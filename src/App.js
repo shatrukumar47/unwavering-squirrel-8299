@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App" style={{width:"100%",margin:"auto"}}>
       <Navbar />
-      <div style={{width:"90%", margin:"auto"}}>
+      <div style={{width:"100%", margin:"auto"}}>
           <AllRoutes />
       </div>
       <Footer />

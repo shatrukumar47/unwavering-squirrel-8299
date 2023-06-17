@@ -1,9 +1,10 @@
 .container{
       background-color: white;
 }
-.banner1{
+.banner1>div{
     background: white;
-    width: 100%;
+    width: 80%;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,10 +38,14 @@
     margin-bottom: 20px;
 }
 .banner2{
-    width: 100%;
     background: #000;
 }
-.banner2 > .banner2_child1{
+.banner2 > div{
+    width: 80%;
+    margin: auto;
+    background: #000;
+}
+.banner2  .banner2_child1{
     background: #000;
     width: 80%;
     margin: auto;
@@ -48,13 +53,13 @@
     justify-content: space-between;
     align-items: center;
 }
-.banner2 > .banner2_child1 > h1{
+.banner2  .banner2_child1 > h1{
     color: white;
     background: black;
     font-size: 30px;
     font-weight: 500;
 }
-.banner2 > .banner2_child2{
+.banner2  .banner2_child2{
     background: #000;
     width: 80%;
     margin: auto;
@@ -62,13 +67,13 @@
     justify-content: space-between;
     align-items: center;
 }
-.banner2 > .banner2_child2 > img{
+.banner2  .banner2_child2 > img{
     background: #000;
     border-radius: 100px;
     width: 400px;
     margin-right: 40px;
 }
-.banner2 > .banner2_child2 > h1{
+.banner2  .banner2_child2 > h1{
     color: white;
     background: black;
     font-size: 30px;
@@ -76,7 +81,8 @@
 }
 
 .banner3{
-    width: 100%;
+    width: 90%;
+    margin: auto;
     background: white;
 }
 .banner3 > .banner3_child1{
