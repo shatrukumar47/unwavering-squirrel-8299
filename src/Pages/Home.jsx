@@ -25,6 +25,7 @@ const Home = () => {
   return (
     <div className={style.container} >
       <div className={style.banner1} >
+        <div>
         <div style={{background:"white", marginLeft:"20px"}}>
           <div className={style.textContainer}>
             <h1>Join the Health Revolution</h1>
@@ -42,20 +43,22 @@ const Home = () => {
           > Getting Started  <FontAwesomeIcon icon={faArrowRight} style={{background:"white", marginLeft:"10px"}} /></Button>
           </div>
         </div>
-        <img
-          src="https://img.freepik.com/free-vector/health-insurance-abstract-concept-vector-illustration-health-insurance-contract-medical-expenses-claim-application-form-agent-consultation-sign-document-emergency-coverage-abstract-metaphor_335657-1356.jpg?w=826&t=st=1686766024~exp=1686766624~hmac=d66f07ccb23916c560fc268cb455c005ea200f558abb57e63188031d439f7c5b"
-          alt=""
-        />
+          <img
+            src="https://img.freepik.com/free-vector/health-insurance-abstract-concept-vector-illustration-health-insurance-contract-medical-expenses-claim-application-form-agent-consultation-sign-document-emergency-coverage-abstract-metaphor_335657-1356.jpg?w=826&t=st=1686766024~exp=1686766624~hmac=d66f07ccb23916c560fc268cb455c005ea200f558abb57e63188031d439f7c5b"
+            alt="" />
+        </div>
       </div>
       <div className={style.banner2}>
+        <div>
           <div className={style.banner2_child1}>
-             <h1> "Never Miss a Dose Again!" <br /> Get started today and experience the peace of mind of never missing a dose.</h1> 
-            <img src="https://img.freepik.com/free-photo/medication-black_1150-13889.jpg?size=626&ext=jpg&ga=GA1.2.1257944628.1683352118&semt=ais" alt="" />
-          </div>
-          <div className={style.banner2_child2}>
-            <img src="https://healthifyme.imgix.net/static/images/home_website/landing/assets/Metabolic.png?auto=format" alt="" />
-             <h1>Set up personalized medication schedules and receive timely reminders. Take control of your health and never forget to take your pills.</h1> 
-          </div>
+              <h1> "Never Miss a Dose Again!" <br /> Get started today and experience the peace of mind of never missing a dose.</h1> 
+              <img src="https://img.freepik.com/free-photo/medication-black_1150-13889.jpg?size=626&ext=jpg&ga=GA1.2.1257944628.1683352118&semt=ais" alt="" />
+            </div>
+            <div className={style.banner2_child2}>
+              <img src="https://healthifyme.imgix.net/static/images/home_website/landing/assets/Metabolic.png?auto=format" alt="" />
+              <h1>Set up personalized medication schedules and receive timely reminders. Take control of your health and never forget to take your pills.</h1> 
+            </div>
+        </div>
       </div>
       <div className={style.banner3}>
           <div className={style.banner3_child1}>
