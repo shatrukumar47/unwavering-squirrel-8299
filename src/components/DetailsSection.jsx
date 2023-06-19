@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import style from "./DetailsSection.module.css"
+import { IoAlarm,IoAlarmOutline } from "react-icons/io5";
 
 const DetailsSection = ({id, userId, medicine, medicineForm, healthCondition, days, frequency, instruction, reminders, startDate}) => {
 
@@ -32,7 +33,7 @@ const DetailsSection = ({id, userId, medicine, medicineForm, healthCondition, da
                todayflag ? reminders?.map((item)=>{
                   return <div key={item.id}>
                       <div>
-                        <i class="far fa-heart"></i>
+                        <IoAlarmOutline color='red' />
                         <p>{medicine}</p>
                       </div>
                       <span style={{marginLeft:"30px", fontSize:"13px", color:"grey"}}>1 {medicineForm} , at <span style={{color:"green", fontWeight:"bold", fontSize:"16px"}}>{item.time}</span> {item.description}</span>
@@ -50,7 +51,7 @@ const DetailsSection = ({id, userId, medicine, medicineForm, healthCondition, da
                 tomoFlag ? reminders?.map((item)=>{
                   return <div>
                       <div>
-                        <i class="far fa-heart"></i>
+                        <IoAlarmOutline color='red' />
                         <p>{medicine}</p>
                       </div>
                       <span style={{marginLeft:"30px", fontSize:"13px", color:"grey"}}>1 {medicineForm} , at <span style={{color:"orange", fontWeight:"bold", fontSize:"16px"}}>{item.time}</span> {item.description}</span>
