@@ -34,4 +34,9 @@ React , CSS, Chakra UI
 ## Landing Page
 ![Screenshot (248)](https://github.com/shatrukumar47/unwavering-squirrel-8299/assets/123942835/fe649ac5-fbb9-4f01-a551-a99d0a14c9a9)
 
+## Dashboard
+![Screenshot (249)](https://github.com/shatrukumar47/unwavering-squirrel-8299/assets/123942835/01eccbd5-e275-4cab-b393-b9e3238efb69)
+
+
+
 
