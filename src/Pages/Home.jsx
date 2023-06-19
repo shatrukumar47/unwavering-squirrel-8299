@@ -1,26 +1,16 @@
-import React from "react";
-// import { Button, Modal, ModalContent, ModalHeader, ModalOverlay, useDisclosure } from "@chakra-ui/react";
+import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import style from "./Home.module.css"
-import { Navigate } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 import Form from "./Form";
 import {
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton,
-  useDisclosure, 
-  FormControl,
-  FormLabel,Input, Button, Heading, Highlight
+  useDisclosure, Button, Heading, Highlight
 } from '@chakra-ui/react'
+import { AuthContext } from "../components/AuthContextProvier";
 
 const Home = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
+  const {isAuth} = useContext(AuthContext)
   
   return (
     <div className={style.container} >
@@ -48,7 +38,7 @@ const Home = () => {
             variant="outline"
             size="lg"
             onClick={onOpen}
-          > Getting Started  <FontAwesomeIcon icon={faArrowRight} style={{background:"white", marginLeft:"10px"}} /></Button>
+          > {isAuth ? "Add Medications" : "Getting Started"} <FontAwesomeIcon icon={faArrowRight} style={{background:"white", marginLeft:"10px"}} /></Button>
           </div>
         </div>
           <img

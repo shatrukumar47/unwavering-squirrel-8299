@@ -19,10 +19,13 @@ const CalendarSection = ({id, userId, medicine, medicineForm, healthCondition, d
   return (
     <div className={style.container}>
       <div className={style.info}>
-            <h1> <span>Health Condition :</span> {healthCondition}</h1>
-            <h2> <span>Start Date : </span> {startDate}</h2>
-            <h3> <span>Days : </span> {days?.join(" , ").toUpperCase()}</h3>
-            <p> <span>Instructions ? : </span>{instruction}</p>
+            <span>Health Condition :</span>
+            <h1>{healthCondition}</h1>
+            <span>Start Date : </span>
+            <h1>{startDate}</h1>
+            <span>Days : </span><h1>{days?.join(" , ").toUpperCase()}</h1>
+            <span>Instructions ? : </span>
+            <h1>{instruction}</h1>
 
       </div>
       <div className={style.calendar}>

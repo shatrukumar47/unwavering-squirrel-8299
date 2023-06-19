@@ -1,0 +1,24 @@
+.container{
+    border: 1px solid #4D9DCE;
+    width: 55%;
+    padding: 70px;
+    background: white;
+    color: black;
+}
+.upperDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.upperDiv > div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.upperDiv > div > div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
