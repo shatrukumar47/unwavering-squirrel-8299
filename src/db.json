@@ -1,0 +1,129 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "firstname": "Dharmendra",
+        "lastname": "Kumar",
+        "dateOfBirth": "1990-05-15",
+        "email": "dharam@gmail.com",
+        "password": "password123",
+        "medications": [1, 2]
+      },
+      {
+        "id": 2,
+        "username": "jane_smith",
+        "email": "jane.smith@example.com",
+        "password": "mypassword",
+        "dateOfBirth": "1985-12-10",
+        "medications": [3]
+      }
+    ],
+    "medications": [
+      {
+        "id": 1,
+        "userId": 1,
+        "name": "Medication 1",
+        "dosage": "10mg",
+        "frequencyType": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+        "frequency": "2 times daily",
+        "startDate": "2023-06-01",
+        "medicineType": "Pill",
+        "purpose": "Treatment for high blood pressure",
+        "reminders": [
+          {
+            "id": 1,
+            "time": "08:00 AM",
+            "description": "Take 1 pill with breakfast"
+          },
+          {
+            "id": 2,
+            "time": "08:00 PM",
+            "description": "Take 1 pill with dinner"
+          }
+        ],
+        "intakeHistory": [
+          {
+            "id": 1,
+            "date": "2023-06-01",
+            "time": "08:00 AM"
+          },
+          {
+            "id": 2,
+            "date": "2023-06-01",
+            "time": "08:00 PM"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "userId": 1,
+        "name": "Medication 2",
+        "dosage": "20mg",
+        "frequencyType": ["mon", "tue"],
+        "frequency": "Once daily",
+        "startDate": "2023-06-01",
+        "medicineType": "Drops",
+        "purpose": "Eye drops for allergies",
+        "reminders": [
+          {
+            "id": 3,
+            "time": "10:00 AM",
+            "description": "Take 1 drop in the morning"
+          }
+        ],
+        "intakeHistory": [
+          {
+            "id": 3,
+            "date": "2023-06-01",
+            "time": "10:00 AM"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "userId": 2,
+        "name": "Medication A",
+        "dosage": "5mg",
+        "frequencyType": ["mon", "tue", "wed"],
+        "frequency": "3 times daily",
+        "startDate": "2023-06-01",
+        "medicineType": "Injections",
+        "purpose": "Insulin injections for diabetes",
+        "reminders": [
+          {
+            "id": 4,
+            "time": "09:00 AM",
+            "description": "Take 1 injection in the morning"
+          },
+          {
+            "id": 5,
+            "time": "01:00 PM",
+            "description": "Take 1 injection in the afternoon"
+          },
+          {
+            "id": 6,
+            "time": "06:00 PM",
+            "description": "Take 1 injection in the evening"
+          }
+        ],
+        "intakeHistory": [
+          {
+            "id": 4,
+            "date": "2023-06-01",
+            "time": "09:00 AM"
+          },
+          {
+            "id": 5,
+            "date": "2023-06-01",
+            "time": "01:00 PM"
+          },
+          {
+            "id": 6,
+            "date": "2023-06-01",
+            "time": "06:00 PM"
+          }
+        ]
+      }
+    ]
+  }
+  

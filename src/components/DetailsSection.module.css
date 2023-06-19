@@ -1,0 +1,37 @@
+.container{
+    width: 350px;
+    background: #0060A5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container > img{
+    margin: auto;
+    border-radius: 10px;
+}
+.container > .box1 , .box2{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 10px;
+    padding: 10px;
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.box1 > .box1_child , .box2_child{
+    margin: 10px 0px;
+}
+
+.box1 > .box1_child > div > div , .box2_child > div > div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.box1 > .box1_child > div i , .box2_child > div i{
+    color:red
+}

@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstname": "Dharam",
+      "lastname": "Kumar",
+      "dateOfBirth": "1990-05-15",
+      "email": "dharam@gmail.com",
+      "password": "123",
+      "medications": [1]
+    }
+  ],
+  "medications": [
+    {
+      "id": 1,
+      "userId": 1,
+      "medicine": "Medication 1",
+      "medicineForm": "Pill",
+      "healthCondition": "Treatment for high blood pressure",
+      "startDate": "2023-06-01",
+      "days": ["mon", "tues"],
+      "frequency": "2 times daily",
+      "reminders": [
+        {
+          "id": 1,
+          "time": "08:00 AM",
+          "description": "Take 1 pill with breakfast"
+        },
+        {
+          "id": 2,
+          "time": "08:00 PM",
+          "description": "Take 1 pill with dinner"
+        }
+      ],
+      "instruction": ""
+    }
+  ]
+}

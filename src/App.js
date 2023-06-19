@@ -5,6 +5,7 @@ import { Container, Box } from '@chakra-ui/react'
 import Home from './Pages/Home';
 import Footer from './components/Footer';
 import AllRoutes from './Routes/AllRoutes';
+import Loading from './components/Loading';
 
 function App() {
   return (

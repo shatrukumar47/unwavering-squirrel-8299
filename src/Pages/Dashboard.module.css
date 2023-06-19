@@ -1,13 +1,13 @@
 .container{
     background: #070e39;
-    height: 650px;
     color: white;
     padding: 10px;
 }
 
 .dashboard{
-    border: 1px solid red;
     width: 90%;
     margin: auto;
-    background: #070e39;
+    background: #4D9DCE;
+    display: flex;
+    justify-content: space-between;
 }

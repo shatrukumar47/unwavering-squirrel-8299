@@ -15,11 +15,12 @@
 .textContainer{
     margin-bottom: 20px;
 }
-.textContainer > h1{
+.textContainer  .h1{
     color: #070e39;
     background: white;
     font-size: 40px;
     font-weight: 500;
+    margin-bottom: 20px;
 }
 .textContainer > p{
     color: #070e39;

@@ -21,7 +21,7 @@ const PageNotFound = () => {
             variant="outline"
             size="lg"
             onClick={()=> navigate("/") }
-          > Go Back  <FontAwesomeIcon icon={faArrowRight} style={{background:"#070e39", marginLeft:"10px"}} /></Button>
+          > Go Back  <FontAwesomeIcon icon={faArrowRight} style={{marginLeft:"10px"}} /></Button>
     </div>
   )
 }

@@ -11,12 +11,11 @@
 .container > img{
     width: 300px;
     border-radius: 50%;
-    background: black;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     margin-bottom: 10px;
 }
 .container > h1{
-    color: white;
+    color: #070e39;
     font-size: 40px;
     margin-bottom: 20px;
 }
