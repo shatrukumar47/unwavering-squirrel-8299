@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import {
   Modal,
   ModalOverlay,
@@ -7,10 +7,6 @@ import {
   ModalFooter,
   ModalBody,
   ModalCloseButton,
-  FormControl,
-  FormLabel,
-  Input,
-  Button,
   Stepper,
   Step,
   StepIndicator,
@@ -20,30 +16,43 @@ import {
   Box,
   StepTitle,
   StepSeparator,
-  useSteps,
-  Select,
-  Checkbox,
-  InputGroup,
-  InputLeftElement,
-  Textarea,
+  useSteps
 } from "@chakra-ui/react";
-import style from "./Form.module.css"
-import { BellIcon, CalendarIcon, EditIcon, EmailIcon, LockIcon, PhoneIcon, PlusSquareIcon, SmallAddIcon } from "@chakra-ui/icons";
 import Form1 from "./Form1";
 import Form2 from "./Form2";
 import Form3 from "./Form3";
-
-
-const steps = [
-    { title: "Contact Info", description: "Contact Info" },
-    { title: "Medication Details-1", description: "Date & Time" },
-    { title: "Medication Details-2", description: "Date & Time" },
-];
+import { AuthContext } from "../components/AuthContextProvier";
 
 
 const Form = ({ isOpen, onClose }) => {
   const initialRef = React.useRef(null);
   const finalRef = React.useRef(null);
+  const [userID, setUserID] = useState()
+  const [form2Data, setForm2Data] = useState({});
+  const {isAuth, Login, Logout} = useContext(AuthContext);
+
+  let steps ;
+  if(isAuth){
+    steps = [
+      { title: "Medication Details-1", description: "Date & Time" },
+      { title: "Medication Details-2", description: "Date & Time" },
+    ];
+  }else{
+    steps = [
+      { title: "Contact Info", description: "Contact Info" },
+      { title: "Medication Details-1", description: "Date & Time" },
+      { title: "Medication Details-2", description: "Date & Time" },
+    ];
+  }
+
+  const getUserID = (id)=>{
+    // console.log("user id => " +id);
+    setUserID(id);
+  }
+
+  const getForm2Data = (data)=>{
+    setForm2Data(data);
+  }
 
   
   const abcd = useSteps({index: 0, count: steps.length, });
@@ -86,16 +95,12 @@ const Form = ({ isOpen, onClose }) => {
             
             {/* steppers end */}
             {
-                activeStep===0?  <Form1 goToNext={goToNext} /> : activeStep===1 ? <Form2 goToNext={goToNext} /> : <Form3 goToPrevious={goToPrevious} goToNext={goToNext} />
+              !isAuth ?  (activeStep ===0 ?  <Form1 goToNext={goToNext} getUserID ={getUserID} /> : activeStep===1 ? <Form2 goToNext={goToNext} userID={userID} getForm2Data={getForm2Data} /> : <Form3 goToPrevious={goToPrevious} goToNext={goToNext} form2Data={form2Data} />) : (activeStep===0 ? <Form2 goToNext={goToNext} userID={userID} getForm2Data={getForm2Data} /> : <Form3 goToPrevious={goToPrevious} goToNext={goToNext} form2Data={form2Data} />)
             }
           
           </ModalBody>
 
           <ModalFooter>
-            {/* <Button colorScheme="blue" onClick={goToPrevious} mr={3}>
-              Previous
-            </Button>
-            <Button colorScheme="green" onClick={goToNext}>Next</Button> */}
           </ModalFooter>
         </ModalContent>
       </Modal>

@@ -1,45 +1,48 @@
-import React from "react";
-import { Button } from "@chakra-ui/react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faMobileScreenButton} from "@fortawesome/free-solid-svg-icons";
+import React, { useContext } from "react";
+import { Button, useDisclosure } from "@chakra-ui/react";
 import logo from "./logo.png";
 import style from "./Navbar.module.css";
+import Login from "../Pages/Login";
+import { Navigate, useNavigate } from "react-router-dom";
+import { AuthContext } from "./AuthContextProvier";
 
 function Navbar() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const navigate = useNavigate();
+  const {isAuth} = useContext(AuthContext);
+
   return (
     <div className={style.navbar}>
-      <div style={{ display: "flex", alignItems: "center", marginLeft:"60px" }}>
-        <img src={logo} alt="logo" className={style.logo} />
+      <div
+        style={{ display: "flex", alignItems: "center", marginLeft: "60px" }}
+      >
+        <img src={logo} alt="logo" className={style.logo} onClick={()=> navigate(`/`)} />
         <div className={style.logoContainer}>
-          <h1 style={{ color: "#E25B55", fontSize: "30px", fontWeight: "bolder" }} > PILL </h1>
+          <h1
+            style={{ color: "#E25B55", fontSize: "30px", fontWeight: "bolder" }}
+          >
+            {" "}
+            PILL{" "}
+          </h1>
           <h1 style={{ color: "blue" }}>ALERT</h1>
         </div>
       </div>
-      <div style={{marginRight:"50px"}}>
-        <Button
-          variant="outline"
-          style={{ color: "white", marginRight: "20px" }}
-          _hover={{ bg: "black" }}
-        >
-          Play Store{" "}
-          <img
-            src="https://healthifyme.imgix.net/static/images/home_website/landing/icons/playstore_ic.svg"
-            alt=""
-            style={{ marginLeft: "10px" }}
-          />
-        </Button>
-        <Button
-          variant="outline"
-          style={{ color: "white" }}
-          _hover={{ bg: "black" }}
-        >
-          Apple Store{" "}
-          <FontAwesomeIcon
-            icon={faMobileScreenButton}
-            style={{ marginLeft: "10px" }}
-          />
-        </Button>
-      </div>
+      {
+        isAuth? "" : <div style={{ marginRight: "50px" }}>
+            <Button
+              variant="outline"
+              style={{ color: "white" }}
+              _hover={{ bg: "#7C98F4" }}
+              onClick={onOpen}
+            >
+              Log In{" "}
+              <i class="fas fa-sign-in-alt" style={{ marginLeft: "10px" }}></i>
+            </Button>
+          
+          <Login isOpen={isOpen} onClose={onClose} />
+        </div>
+      }
+     
     </div>
   );
 }

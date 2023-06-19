@@ -16,7 +16,7 @@ import {
   ModalCloseButton,
   useDisclosure, 
   FormControl,
-  FormLabel,Input, Button
+  FormLabel,Input, Button, Heading, Highlight
 } from '@chakra-ui/react'
 
 const Home = () => {
@@ -28,8 +28,16 @@ const Home = () => {
         <div>
         <div style={{background:"white", marginLeft:"20px"}}>
           <div className={style.textContainer}>
-            <h1>Join the Health Revolution</h1>
-            <h1> It's Time. </h1>
+            <Heading lineHeight='tall' className={style.h1}>
+              <Highlight
+                query='Health Revolution'
+                styles={{ px: '2', py: '1', rounded: 'full', bg: '#95B6FB', color:"white" }}
+              >
+                Join the Health Revolution
+              </Highlight>
+            </Heading>
+            {/* <h1>Join the Health Revolution</h1>
+            <h1> It's Time. </h1> */}
             <p>Staying on top of your health is only a few taps away. Start by creating your profile to personalize your experience.</p>
           </div>
           <div className={style.gettingStarted}>
