@@ -2,7 +2,7 @@
 An individual React project to build Pill Reminder website.
 
 ## Deployment Link
-
+[netlify](https://tangerine-dusk-0353ff.netlify.app/)
 ###
 The name of website is **"Pill Alert"** , it is based on pill reminder website where we can set reminder for to take pills.
 
